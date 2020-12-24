@@ -2,16 +2,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans"
 }
 
 html, body {
   height: 100%;
-  font-family: 'Open Sans', sans-serif;
 }
 
 @font-face{
-  src: url('../fonts/OpenSans-Light.ttf');
+  src:url('../fonts/OpenSans-Light.ttf');
   font-family: "Open Sans";
 }
 
@@ -20,13 +19,13 @@ html, body {
 }
 
 .center{
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
-  padding: 0 2%;
+  max-width: 1280px;
 }
 
 .header {
-  min-width: 1200px;
+  padding: 0 2%;
   width: 100%;
   height: 60px;
   background-color: #212343;
@@ -37,7 +36,7 @@ html, body {
 }
 
 .container-banner{
-  min-width: 1200px;
+  padding: 0 2%;
   width: 100%;
   height: 557px;
   background-image: url('../images/header_bg.png');
@@ -57,7 +56,7 @@ html, body {
   background-color: white;
   position: relative;
   top: -15px;
-  border: 8px solid rgb(120, 120, 204, 0.5);
+  border: 12px solid rgb(120, 120, 204, 0.5);
   background-clip: padding-box;
 }
 
@@ -76,7 +75,6 @@ html, body {
   width: 100%;
   color: #bbb;
   font-size: 17px;
-  font-weight: normal;
 }
 
 .form p{
@@ -130,8 +128,7 @@ html, body {
 }
 
 .container-2 {
-  min-width: 1200px;
-  padding: 40px 0;
+  padding: 40px 2%;
   background-color: #ddd;
   text-align: center;
 }
@@ -142,7 +139,7 @@ html, body {
 }
 
 .container-2 p{
-  width: 698px;
+  width: 100%;;
   margin: 15px 0;
   display: inline-block;
   text-align: justify;
@@ -161,7 +158,7 @@ html, body {
 }
 
 .section-1{
-  padding:90px 0;  
+  padding:90px 2%;  
 }
 
 .section-1 h2{
