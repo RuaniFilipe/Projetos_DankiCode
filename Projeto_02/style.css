@@ -14,6 +14,10 @@
   clear: both;
 }
 
+body{
+  background: linear-gradient(white, #D3D8E8);
+}
+
 header {
   background-color: #156FE5;
   padding: 8px 0;
@@ -65,7 +69,6 @@ form.form-login{
 }
 
 main {
-  background: linear-gradient(white, #D3D8E8);
   padding: 40px 0;
 }
 
@@ -168,5 +171,56 @@ form select.nascimento {
 form.criar-conta input[type="date"]{
   margin-top: 0px;
   width: 50%
+}
+
+@media screen and (max-width: 768px){
+  .logo {
+    width: 100%;
+    text-align: center;
+    float: none;
+  }
+
+  form.form-login{
+    width: 100%;
+    text-align: center;
+    float: none;
+    display: inline-block;
+    margin-top: 10px;
+  }
+
+  .form-login .form-element{
+    display: block;
+    margin: 10px 0;
+  }
+  
+  .form-element p{
+    color: white;
+    font-size: 14px;
+    font-weight: bold
+  }
+  
+  .form-element input[type="email"],
+  .form-element input[type="password"]{
+    margin-top: 4px;
+    border: 0;
+    height: 22px;
+    padding-left: 6px;
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .form-element input[type="submit"]{
+    width: 140px;
+  }
+
+  .img-pessoas{
+    display: none;
+  }
+
+  .abrir-conta{
+    width: 100%;
+  }
+
+
 }
 
