@@ -1,0 +1,123 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+header{
+  padding: 10px 3% 30px 3%;
+  background-color: #D6D6D6;
+}
+
+.container{
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.clear{
+  clear: both;
+}
+
+.logo-1{
+  float: left;
+  width: 160px;
+  height: 90px;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/a/ab/Logo_TV_2015.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.logo-2{
+  float: right;
+  width: 160px;
+  height: 90px;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/a/ab/Logo_TV_2015.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+main.cover-form{
+  width: 100%;
+  padding: 0 2%;
+}
+
+.bg{
+  height: 500px;
+  background-position: center;
+  background-size: cover;
+  background-image: url('https://silversea-h.assetsadobe2.com/is/image/content/dam/silversea-com/api-provided/ports/a/antibes/ECM_251737_silversea-mediterranean-cruise-cannes-antibes-france.jpg?wid=1200&hei=1200&fit=constrain');
+}
+
+.form-container {  
+  float: right;
+  margin-right: 40px;
+  width: 400px;
+  height: 110%;
+  position: relative;
+  top: -5%;
+  background-color: white;
+}
+
+.form-container h2{
+  font-weight: normal;
+  background-color: rgb(234, 236, 239);
+  padding: 20px 15px;
+  color: black;
+  font-size: 18px;
+}
+
+.form-container form {
+  margin-top: 8px;
+  padding: 10px;
+}
+
+.form-container form p{
+  font-size: 14px;
+  color: #525252;
+  margin-bottom: 5px;
+}
+
+.form-wrapper:not(:first-child){
+  margin-top: 40px;
+}
+
+.form-wrapper:last-child{
+  margin-top: 20px;
+}
+
+.form-container form input[type=text],.form-container form input[type=email], .form-container form input[type=phone] {
+  width:100%;
+  border: 1px solid black;
+  height: 45px;
+  line-height: 45px;
+  padding-left: 10px;
+  border-radius: 15px;
+}
+
+.form-container form input[type=submit]{
+  background-color: #033c50;
+  text-transform: uppercase;
+  color: white;
+  width: 100%;
+  font-size: 25px;
+  height: 50px;
+  border: 0;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 510px){
+  header{
+    text-align: center;
+  }
+  
+  [class^="logo"]{
+    display: inline-block;
+    float: none;
+  }
+}
