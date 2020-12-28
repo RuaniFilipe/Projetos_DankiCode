@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
 }
 
 html, body {
@@ -9,8 +10,8 @@ html, body {
 }
 
 header{
-  padding: 10px 3% 30px 3%;
-  background-color: #D6D6D6;
+  padding: 10px 3% 40px 3%;
+  background: linear-gradient(to bottom, rgb(180, 180, 180), rgb(220, 220, 220));
 }
 
 .container{
@@ -47,7 +48,7 @@ main.cover-form{
 }
 
 .bg{
-  height: 500px;
+  height: 550px;
   background-position: center;
   background-size: cover;
   background-image: url('https://silversea-h.assetsadobe2.com/is/image/content/dam/silversea-com/api-provided/ports/a/antibes/ECM_251737_silversea-mediterranean-cruise-cannes-antibes-france.jpg?wid=1200&hei=1200&fit=constrain');
@@ -57,22 +58,23 @@ main.cover-form{
   float: right;
   margin-right: 40px;
   width: 400px;
-  height: 110%;
+  height: 105%;
   position: relative;
-  top: -5%;
-  background-color: white;
+  top: -2.5%;
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 1px 1px 2px 1px  rgb(180,180,180);
 }
 
 .form-container h2{
   font-weight: normal;
-  background-color: rgb(234, 236, 239);
-  padding: 20px 15px;
+  background-color: rgb(220,220,220);
+  padding: 25px 15px;
   color: black;
   font-size: 18px;
 }
 
 .form-container form {
-  margin-top: 8px;
+  margin-top: 15px;
   padding: 10px;
 }
 
@@ -109,6 +111,54 @@ main.cover-form{
   border: 0;
   border-radius: 15px;
   cursor: pointer;
+}
+
+section.chamada {
+  text-align: center;
+  width: 100%;  
+}
+
+section.chamada .container{
+  background: linear-gradient(to top, rgb(121, 121, 121), rgb(180, 180, 180));
+  padding: 50px 0;
+}
+
+section.chamada h2 {
+  display: inline-block;
+  font-size: 26px;
+  font-weight: normal;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.938);
+  -webkit-text-stroke-width: 0.7px;
+  -webkit-text-stroke-color: #eee;
+  width: 96%;
+  max-width: 700px;
+}
+
+section.chamada p{
+  width: 96%;
+  max-width: 700px;
+  display: inline-block;
+  color: white;
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+@media screen and (max-width: 960px){
+  .bg {
+    height: auto;
+    padding: 40px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .form-container {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+  }
 }
 
 @media screen and (max-width: 510px){
