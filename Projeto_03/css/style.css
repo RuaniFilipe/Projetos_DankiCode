@@ -11,7 +11,7 @@ html, body {
 
 header{
   padding: 10px 3% 40px 3%;
-  background: linear-gradient(to bottom, rgb(180, 180, 180), rgb(220, 220, 220));
+  background: linear-gradient(to bottom, rgb(220, 220, 220), rgb(180, 180, 180));
 }
 
 .container{
@@ -31,9 +31,11 @@ header{
   background-image: url('https://upload.wikimedia.org/wikipedia/commons/a/ab/Logo_TV_2015.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
+  margin-top: 25px;
 }
 
 .logo-2{
+  margin-top: 25px;
   float: right;
   width: 160px;
   height: 90px;
@@ -61,15 +63,15 @@ main.cover-form{
   height: 105%;
   position: relative;
   top: -2.5%;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.65);
   box-shadow: 1px 1px 2px 1px  rgb(180,180,180);
 }
 
 .form-container h2{
   font-weight: normal;
-  background-color: rgb(220,220,220);
+  background-color: rgba(180,180,180, 0.5);
   padding: 25px 15px;
-  color: black;
+  color: #033c50;
   font-size: 18px;
 }
 
@@ -80,7 +82,7 @@ main.cover-form{
 
 .form-container form p{
   font-size: 14px;
-  color: #525252;
+  color: #033c50;
   margin-bottom: 5px;
 }
 
@@ -111,6 +113,16 @@ main.cover-form{
   border: 0;
   border-radius: 15px;
   cursor: pointer;
+}
+
+.form-container form input[type=submit]:hover{
+  background-color: rgba(255, 255, 255, 0.8) ;
+  color: #033c50;
+}
+
+.form-container form input:focus{
+  outline: none; 
+  border: 2px solid #033c50;
 }
 
 section.chamada {
